@@ -1,3 +1,8 @@
+# Consulta as pontuações e retorna
+# os 5 filmes mais relacionados a um outro filme
+
+__author__ = "Carlos E. F. de Santana, Daniel Serezane, Guilherme Tomiasi"
+
 import numpy as np
 from pandas import read_csv
 

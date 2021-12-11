@@ -1,3 +1,8 @@
+# Gera um arquivo de dados contendo as
+# pontuações entre filmes.
+
+__author__ = "Carlos E. F. de Santana, Daniel Serezane, Guilherme Tomiasi"
+
 from pandas import read_csv
 import numpy as np
 
@@ -9,7 +14,7 @@ m_scores = read_csv("data/scores.csv")['relevance'].to_numpy().reshape(1000,1128
 scores = np.empty(499500)
 
 # Gerando pontuações entre filmes
-print("Gerando relações...")
+print("Gerando pontuações...")
 for i in range(1000):
     for j in range(i + 1, 1000):
         # Calculando a pontuação
