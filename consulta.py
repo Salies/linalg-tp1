@@ -9,7 +9,7 @@ from pandas import read_csv
 def get_high_five_indexes(vector, key):
     # Salva em "res" todos os filmes relacionados com
     # o filme, de id "key", requisitado
-    res = np.empty(1000)
+    res = np.zeros(999)
     a = key - 1
     # Os valores levam em conta o tamanho e organização do vetor
     for n in range(998, 999 - key - 1, -1):
@@ -37,8 +37,8 @@ print("Dados carregados.")
 # e imprime os resultados
 try:
     while True:
-        m_id = int(input("\033[96m\nDigite o id do filme desejado:\033[37m "))
-        print("Filme selecionado: \33[31m" + str(m_names[m_id]) + "\033[37m\nCinco filmes mais relacionados:\33[33m")
+        m_id = int(input("\nDigite o id do filme desejado: "))
+        print("Filme selecionado: " + str(m_names[m_id]) + "\nCinco filmes mais relacionados:")
         for ml_id in get_high_five_indexes(values, m_id):
             print(m_names[ml_id])
 except KeyboardInterrupt:
