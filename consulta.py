@@ -22,6 +22,7 @@ def get_high_five_indexes(vector, key):
     # Nota-se que aqui "a" é redefinida, apenas para economizar uma variável.
     a = np.argpartition(res, -5)[-5:]
     a = a[np.argsort(res[a])][::-1]
+    # Ajuste de id, para pegar os nomes dos filmes corretamente.
     for i in range(5):
         if a[i] >= key:
             a[i] += 1
