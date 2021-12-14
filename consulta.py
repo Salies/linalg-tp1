@@ -33,7 +33,7 @@ with open('rel.npy', 'rb') as f:
     values = np.load(f)
 print("Dados carregados.")
 
-# Loop do programa, consulta o usuário
+# Loop do programa: consulta o usuário
 # e imprime os resultados
 try:
     while True:

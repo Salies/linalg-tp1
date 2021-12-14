@@ -10,7 +10,7 @@ import numpy as np
 print("Abrindo arquivos...")
 m_scores = read_csv("data/scores.csv")['relevance'].to_numpy().reshape(1000,1128)
 
-# Preparando o array de valores para receber as realções
+# Preparando o array de valores para receber as relações
 scores = np.empty(499500)
 
 # Gerando pontuações entre filmes
