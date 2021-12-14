@@ -9,7 +9,7 @@ from pandas import read_csv
 def get_high_five_indexes(vector, key):
     # Salva em "res" todos os filmes relacionados com
     # o filme, de id "key", requisitado
-    res = np.zeros(999)
+    res = np.empty(999)
     a = key - 1
     # Os valores levam em conta o tamanho e organização do vetor
     for n in range(998, 999 - key - 1, -1):
